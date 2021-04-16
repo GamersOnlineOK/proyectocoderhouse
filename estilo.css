@@ -1,0 +1,884 @@
+* {
+    margin: 5px;
+    padding: 5px;
+}
+body {
+    background-color: #08457c;
+    font-family: 'Roboto', sans-serif;
+    line-height: 5px;
+}
+
+
+/* DISEÑO MOBILE STYLE ---------------------------------------------------------------------------------- */
+@media only screen and (max-width: 400px) {
+
+    body {
+        background: linear-gradient(to bottom, #1b2436, rgb(255, 255, 255));
+        display: grid;
+        grid-template-columns: 600px;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-area:
+            "menu"
+            "logo"
+            "titulo"
+            "video"
+            "propaganda"
+            "redes";
+    }
+
+    .izquierda {
+        grid-area: "logo";
+        background-color: #08457c;
+        border-style: solid;
+        width: 360px;
+        transform: translateX(50px) rotate(360deg);
+        transition: 1s;
+
+    }
+
+    .gridtitulo1 {
+        grid-area: "titulo";
+        background-color: #b2d6f6;
+        border-style: solid;
+        width: 380px;
+        text-transform: capitalize;
+        text-align: center;
+        color: #2d8b57;
+        border-color: #242926;
+        transform: translateX(50px)
+    }
+
+
+
+
+
+
+    .menu {
+        grid-area: "menu";
+
+        background-color: #2e363d;
+        border-style: solid;
+        list-style: none;
+        width: 535px;
+        float: left;
+        background-color: #b3d4f1;
+        transform: translateY(30px) translateX(-40px);
+    }
+
+    .bordesMenu {
+
+        background-color: #51c384;
+        height: 50px;
+        width: 500px;
+        border: black;
+        border-style: double;
+        display: inline-block;
+        float: left;
+        transform: translateX(5px);
+
+    }
+
+    .bordesMenu:hover {
+        transition: 1s;
+        height: 100px;
+        width: 570px;
+    }
+
+    .bordesSubMenu {
+        display: inline-block;
+        float: right;
+        background-color: #b2d6f6;
+        border-style: solid;
+        height: 30px;
+        width: 90px;
+    }
+
+
+    .video {
+        grid-area: "video";
+        background-color: #b2d6f6;
+        border-style: solid;
+        transform: translateX(-50px);
+    }
+
+    .celesteClaro {
+        grid-area: "propaganda";
+        background-color: #1b4062;
+        border-style: dotted;
+        border-color: #1b2a36;
+        text-align: center;
+    }
+
+    .celesteClaro {
+        height: 30px;
+        width: 300px;
+        transform: translateX(80px);
+    }
+    #footer {
+        background-color: #b2d6f6;
+        display: inline-block;
+        border-style: double;
+        margin: 0px;
+        padding: 10px;
+        width: 500px;
+        height: 370px;
+        transform: translateX(-20px)translateY(-400px);
+
+    }
+
+    .instagram {
+        border-style: double;
+        background-color: #31a565;
+        width: 95%;
+        height: 95px;
+        text-align: center;
+    }
+    .facebook {
+        border-style: double;
+        background-color: #31a565;
+        width: 95%;
+        height: 95px;
+        text-align: center
+    }
+    .youtube {
+        border-style: double;
+        background-color: #31a565;
+        width: 95%;
+        height: 95px;
+        text-align: center;
+    }
+
+    .instagramimg {
+        visibility: hidden;
+    }
+    .facebookimg {
+        display: none;
+    }
+    .youtubeimg {
+        display: none;
+    }
+
+
+    
+    
+  
+
+
+
+}
+
+
+
+
+
+
+/* DISEÑO TABLET STYLE ----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 401px) and (max-width:960px) {
+    body {
+        background: linear-gradient(#6c99c4, black);
+    }
+
+
+    .pequeño {
+        font-size: 10px;
+    }
+    .mediano {
+        font-size: 20px;
+    }
+    .grande2 {
+
+        background-color: #d1e6ed;
+        border-color: #1b2a36;
+        border-style: solid;
+
+        height: 10;
+        width: 10;
+    }
+
+    .izquierda {
+        float: left;
+    }
+    .derecha {
+        float: right;
+    }
+    .grande {
+        border-top: 10px;
+        border-bottom: 10px;
+        border-left: 50px;
+        border-right: 50px;
+        background-color: #d1e6ed;
+        border-color: #1b2a36;
+        border-style: solid;
+        padding: 5px 40px;
+        font-style: oblique;
+    }
+
+
+
+
+    .romano {
+        list-style: upper-roman;
+    }
+    .mayusculas {
+        text-transform: uppercase;
+    }
+    .capitalize {
+        text-transform: capitalize;
+    }
+
+    .interlineadoCorto {
+        line-height: 1px;
+    }
+    .fondoMenu {
+        float: left;
+        background-color: #6cc478;
+        list-style-type: none;
+        height: 150px;
+        width: 700px;
+        border-style: solid;
+        color: aliceblue;
+    }
+
+    .celesteClaro {
+        background-color: #6c99c4;
+        list-style-type: none
+    }
+    .azulOscuro {
+        background-color: #1b2a36;
+    }
+    .azulOscuro2 {
+        background-color: #1b2a36;
+        font: size 50px;
+        text-decoration: dotted;
+        color: #6c99c4;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+    footer a:link {
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    a:active {
+        color: #445a6e;
+    }
+
+
+
+
+
+    h1 {
+        color: #31a565
+    }
+    h2 {
+        color: #b3d4f1
+    }
+    h3 {
+        color: #6c99c4
+    }
+    ol {
+        color: #445a6e
+    }
+
+
+    
+    .cuadro2 {
+        color: #8c8c8c;
+        ;
+        background-color: #b3d4f1;
+        width: auto;
+        border: dotted;
+
+    }
+
+    .titulosegundo {
+        color: #445a6e;
+        text-transform: capitalize;
+        height: 100;
+        width: 100;
+    }
+
+
+
+    .linea {
+        inset-inline-end: 100;
+    }
+
+
+
+
+
+
+
+
+    .bordesMenu {
+        border-style: double;
+        border-color: black;
+        background-color: #31a565;
+    }
+
+    .bordesSubMenu {
+        ;
+        border-style: double;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        background-color: #b3d4f1;
+
+        z-index: 10;
+        padding: 5vh;
+
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50% 50%;
+
+        grid-template-areas:
+            "instagram facebook youtube"
+            "instagramimg facebookimg youtubeimg";
+
+        background-color: #6c99c4;
+        border-style: solid;
+        border: #1b2a36 5px double;
+        height: 90px;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .instagram {
+        grid-area: instagram;
+        border-style: double;
+        background-color: #1b4062;
+        width: 50%;
+        text-align: center;
+    }
+    .facebook {
+        grid-area: facebook;
+        border-style: double;
+        background-color: #1b4062;
+        width: 50%;
+        text-align: center
+    }
+    .youtube {
+        grid-area: youtube;
+        border-style: double;
+        background-color: #1b4062;
+        width: 50%;
+        text-align: center
+    }
+    .instagramimg {
+        grid-area: instagramimg;
+    }
+    .facebookimg {
+        grid-area: facebookimg;
+    }
+    .youtubeimg {
+        grid-area: youtubeimg;
+    }
+    a {
+        color: #caf0db;
+    }
+    a:hover {
+        color: antiquewhite;
+    }
+    a:active {
+        color: #31a565;
+    }
+    a:hover {
+        color: none;
+    }
+
+
+    #footer img {
+        height: 50px;
+        weight: 50px;
+        border-radius: 50%;
+
+    }
+
+
+    #menuPrincipal {
+        background-color: #b3d4f1;
+        display: flex;
+        justify-content: space-around;
+    }
+    #menuPrincipal>ul nav li {
+        background-color: #31a565;
+        border-style: double;
+    }
+
+    #menuPrincipal>ul nav li h2 span {
+        background-color: #31a565;
+        border-style: double;
+        color: #1b2a36;
+        height: 20px;
+    }
+
+
+    #tabla>tr th {
+        padding: 10px;
+        line-height: 1px;
+        height: 10px;
+        width: 10px;
+    }
+    #submenu {
+        font-size: 30px;
+        text-transform: uppercase;
+        background-color: none;
+    }
+    #imagen {
+        height: 10%;
+        width: 10%;
+    }
+
+
+    ul {
+        list-style: none;
+        font-size: 0
+            /* truco por el uso de inline-block*/
+    }
+
+    li {
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        font-size: 14px
+    }
+
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+
+    ul ul li {
+        display: block;
+    }
+
+    ul li:hover ul {
+        display: block;
+    }
+    .fondoMenuDesplegable {
+        float:none;
+        background-color: #6cc478;
+        list-style-type:lower-latin;
+        height: auto;
+        width: auto;
+        border-style: double;
+        color: rgb(0, 107, 201);}
+
+
+}
+
+/* DISEÑO DESKOP STYLES---------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 961px) {
+    body {
+        background: linear-gradient(#08457c, black);
+    }
+
+    .pequeño {
+        font-size: 10px;
+    }
+    .mediano {
+        font-size: 20px;
+    }
+    .grande2 {
+
+        background-color: #d1e6ed;
+        border-color: #1b2a36;
+        border-style: solid;
+
+        height: 10;
+        width: 10;
+    }
+
+
+    .izquierda {
+        float: left;
+        transform: translateY(90px) translateX(-10px);
+        transition: 3s;
+    }
+
+    .derecha {
+        float: right;
+    }
+    .grande {
+        border-top: 10px;
+        border-bottom: 10px;
+        border-left: 50px;
+        border-right: 50px;
+        background-color: #d1e6ed;
+        border-color: #1b2a36;
+        border-style: solid;
+        padding: 5px 40px;
+        font-style: oblique;
+    }
+
+
+    .gridtitulo1 {
+        text-align: center;
+        text-transform: capitalize;
+        line-height: 10px;
+    }
+
+    .gridtitulo1 h1 {
+        font-size: 30px;
+
+    }
+    .video {
+        transform: translate(150px);
+    }
+
+
+
+    .romano {
+        list-style: upper-roman;
+    }
+    .mayusculas {
+        text-transform: uppercase;
+    }
+    .capitalize {
+        text-transform: capitalize;
+    }
+
+    .interlineadoCorto {
+        line-height: 1px;
+    }
+    .fondoMenu {
+        float: left;
+        background-color: #6cc478;
+        list-style-type: none;
+        height: 150px;
+        width: 700px;
+        border-style: solid;
+        color: aliceblue;
+    }
+    .fondoMenuDesplegable {
+        float:none;
+        background-color: #6cc478;
+        list-style-type:lower-latin;
+        height: auto;
+        width: auto;
+        border-style: double;
+        color: rgb(0, 107, 201);}
+
+    .celesteClaro {
+        background-color: #6c99c4;
+        list-style-type: none
+    }
+    .azulOscuro {
+        background-color: #1b2a36;
+    }
+    .azulOscuro2 {
+        background-color: #1b2a36;
+        font: size 50px;
+        text-decoration: dotted;
+        color: #6c99c4;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+    footer a:link {
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    a:active {
+        color: #445a6e;
+    }
+
+
+
+
+
+    h1 {
+        color: #31a565
+    }
+    h2 {
+        color: #b3d4f1
+    }
+    h3 {
+        color: #6c99c4
+    }
+    ol {
+        color: #445a6e
+    }
+
+
+    /* los titulos principales de cada pagina seran marcados con un color que, a sugerencia de paginas web que describen los nombres de los colores, son complementarios a los del logo de la compañia */
+
+
+
+    .cuadro2 {
+        color: #8c8c8c;
+        ;
+        background-color: #b3d4f1;
+        width: auto;
+        border: dotted;
+
+    }
+
+    .titulosegundo {
+        color: #445a6e;
+        text-transform: capitalize;
+        height: 100;
+        width: 100;
+    }
+
+
+
+    .linea {
+        inset-inline-end: 100;
+    }
+
+
+
+
+
+
+
+ .menuVentanas {
+    background-color: red;
+ }
+    .bordesMenu {
+        border-style: double;
+        border-color: black;
+        background-color: #31a565;
+        ;
+
+
+    }
+
+    .bordesMenu:hover {
+        transition: 3s;
+        height: 20px;
+        width: 200px;
+        background-color: #097eec;
+    }
+
+    .bordesSubMenu {
+        border-style: double;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        background-color: #b3d4f1;
+
+        z-index: 10;
+        padding: 5vh;
+
+        font-size: 4vh;
+        text-align: center;
+    }
+
+ .tituloventana {
+    color: #31a565;
+    background-color: #1b2436;
+    width: 300px;
+    border-radius: 50px;   
+ }
+ .botoreserva {
+     background-color: rgb(180, 46, 46);
+     width: 300px;
+     border-radius: 1000px;
+ }
+
+
+.mapa {
+    border-style: double;
+    border-color: #08457c;
+    border-radius: 50px;
+    padding: auto;
+    width: 1000px;
+}
+ 
+.cita {
+    background-color:#1b4062;
+    border-style: double;
+}
+
+.textotabla {
+    color: #31a565;
+    line-height: 20px;
+    
+}
+ #texto {
+     color:whitesmoke;
+     line-height: 30px;
+     
+     font-size: 20px;
+ }
+ .contenedorarticulo{
+     display: block;
+    background-color: #1b2436;
+    border-radius: 20px;
+    height: 700px;
+    text-align: center
+ }
+.imagen {
+    height: 500px;    
+    border-radius: 20px;
+}
+
+
+
+    #footer {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50% 50%;
+
+        grid-template-areas:
+            "instagram facebook youtube"
+            "instagramimg facebookimg youtubeimg";
+
+        background-color: #6c99c4;
+        border-style: solid;
+        border: #1b2a36 5px double;
+        height: 90px;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .instagram {
+        grid-area: instagram;
+        border-style: double;
+        background-color: #1b4062;
+        width: 50%;
+        text-align: center;
+    }
+    .facebook {
+        grid-area: facebook;
+        border-style: double;
+        background-color: #1b4062;
+        width: 50%;
+        text-align: center
+    }
+    .youtube {
+        grid-area: youtube;
+        border-style: double;
+        background-color: #1b4062;
+        width: 50%;
+        text-align: center
+    }
+    .instagramimg {
+        grid-area: instagramimg;
+    }
+    .facebookimg {
+        grid-area: facebookimg;
+    }
+    .youtubeimg {
+        grid-area: youtubeimg;
+    }
+    a {
+        color: #caf0db;
+    }
+    a:hover {
+        color: antiquewhite;
+
+    }
+    a:active {
+        color: #31a565;
+    }
+    a:hover {
+        color: none;
+    }
+
+
+    #footer img {
+        height: 50px;
+        weight: 50px;
+        border-radius: 50%;
+
+    }
+
+
+    #menuPrincipal {
+        background-color: #b3d4f1;
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+
+
+
+
+ #menuPrincipal>ul nav li {
+    background-color: #31a565;
+    border-style: double;
+ }
+
+ #menuPrincipal>ul nav li h2 span {
+    background-color: #31a565;
+    border-style: double;
+    color: #1b2a36;
+    height: 20px;
+ }
+
+ .menuPequeño {
+     transform: translateY(-20px);    
+ }
+
+ .menuPequeño:hover {
+     width: 300px; 
+     height: 30px;
+     background-color: ;
+     transition: 2s;
+ }
+
+
+ #tabla>tr th {
+    padding: 10px;
+    line-height: 1px;
+    height: 10px;
+    width: 10px;
+ }
+ #submenu {
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: none;
+ }
+ #imagen {
+    height: 10%;
+    width: 10%;
+ }
+
+
+ ul {
+    list-style: none;
+    font-size: 0
+        /* truco por el uso de inline-block*/
+ }
+
+ li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px
+ }
+
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+
+ ul ul li {
+    display: block;
+ }
+
+ ul li:hover ul {
+    display: block;
+ }
+
+
+ }
+
+
+}
